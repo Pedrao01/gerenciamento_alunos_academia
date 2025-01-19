@@ -1,4 +1,3 @@
-
 def manipular_arquivo(nome_arquivo, informacoes_aluno):
 
     try:
