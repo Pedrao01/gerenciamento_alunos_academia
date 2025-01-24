@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 
 
 def tratar(file_name):
@@ -11,7 +11,15 @@ def tratar(file_name):
 
 
 def pendentes(lista):
-    print(lista[1])
+    date_start = lista[1].split('.')
+    date_start.reverse()
+
+    today = str(datetime.now().date()).split('-')
+
+    for c in range(0, 3):
+        date_start[c] = int(date_start[c])
+        today[c] = int(today[c])
+    print(date_start, today)
 
 
 tratar('alunos_academia')

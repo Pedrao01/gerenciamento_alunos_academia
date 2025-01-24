@@ -21,9 +21,9 @@ def perguntas():
 
 
 def titulo(msg):
-    print('=='*len(msg))
-    print(msg.center(len(msg)*2))
-    print('=='*len(msg))
+    print('===='*len(msg))
+    print(msg.center(len(msg)*4))
+    print('===='*len(msg))
 
 
 def subtitulo(msg):
