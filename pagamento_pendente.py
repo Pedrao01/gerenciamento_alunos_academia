@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 def tratar(file_name):
@@ -20,6 +20,16 @@ def pendentes(lista):
         date_start[c] = int(date_start[c])
         today[c] = int(today[c])
     print(date_start, today)
+
+    instant1 = datetime(*date_start)
+    instant2 = datetime(*today)
+    diferenca = instant2 - instant1
+    print(type(diferenca))
+    if diferenca == timedelta(days=31):
+        print('dia do pagamento')
+    if diferenca > timedelta(days=31):
+        print('atrasou pagamento')
+    print(diferenca)
 
 
 tratar('alunos_academia')
