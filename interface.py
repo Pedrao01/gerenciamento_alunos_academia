@@ -11,7 +11,7 @@ def interface():
 def perguntas():
     while True:
         nome = str(input('nome do aluno: ')).strip()
-        data = str(input('data que entrou[separe por um "."]: ')).strip()
+        data = str(input('data que entrou ou entrou[separe por um "."]: ')).strip()
         valor = str(input('valor pago: ')).strip()
         treinador = str(input('treinador: ')).strip()
         aluno = [nome, data, valor, treinador]
@@ -19,6 +19,7 @@ def perguntas():
             return aluno
         else:
             mensagens('não pode haver valo nulo ou em branco')
+
 
 
 def titulo(msg):
