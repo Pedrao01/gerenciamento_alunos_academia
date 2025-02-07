@@ -7,7 +7,3 @@ class Aluno:
 
     def adicionar_novo_aluno(self):
         manipular_arquivo('alunos_academia', self.informacoes_aluno)
-
-
-# pedro = Aluno('pedro duarte', '13/09/2023', 50)
-# pedro.adicionar_novo_aluno()
