@@ -5,7 +5,7 @@ def pagamento_aluno(arquivo_atrasado, arquivo_alunos, nome_aluno):
             li = linha.split(';')
             if nome_aluno != li[0]:
                 alunos.append(linha)
-                print('não pagou')
+                # print('não pagou')
             else:
                 pagamento(arquivo_alunos, nome_aluno)
 

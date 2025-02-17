@@ -6,9 +6,14 @@ def interface():
     3. ver alunos pendentes
     0. sair do programa
     """)
-        escolha = int(input('qual deseja: '))
-        if 0 <= escolha <= 3:
-            return escolha
+        escolha = input('qual deseja: ')
+        if escolha.isdigit():
+            if 0 <= int(escolha) <= 3:
+                return int(escolha)
+            else:
+                print('escolha a opção de 0 até 3')
+        else:
+            print('digite apenas números')
 
 
 def perguntas():
@@ -28,12 +33,6 @@ def titulo(msg, caractere, num=69):
     print(caractere*num)
     print(msg.center(num))
     print(caractere*num)
-
-
-# def subtitulo(msg):
-#     print('--' * len(msg))
-#     print(msg.center(len(msg)*2))
-#     print('--' * len(msg))
 
 
 def mensagens(msg):
